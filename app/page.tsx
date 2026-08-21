@@ -183,6 +183,13 @@ export default function Home() {
 
       {/* Main Content Dashboard */}
       <main className="relative z-10 flex-1 max-w-7xl w-full mx-auto px-4 py-6 sm:py-8 space-y-6">
+        <section className="sr-only" aria-labelledby="page-title">
+          <h1 id="page-title">What Is My Screen Resolution?</h1>
+          <p>
+            Check your screen resolution instantly with a browser-based display and viewport checker. Cyber-Resolution reports physical screen pixels, CSS resolution, viewport size, device pixel ratio, aspect ratio, and estimated refresh rate.
+          </p>
+        </section>
+
         {/* Primary Screen Resolution Hero Showcase */}
         <ResolutionHero telemetry={telemetry} />
 
@@ -282,6 +289,17 @@ export default function Home() {
             {telemetry && <TelemetryGrid telemetry={telemetry} />}
           </div>
         )}
+
+        <section className="sr-only" aria-labelledby="how-it-works-title">
+          <h2 id="how-it-works-title">Screen Resolution and Display Information</h2>
+          <p>
+            Screen resolution is the number of physical pixels on a display, while viewport size is the browser area available to a web page in CSS pixels. Device pixel ratio explains how the browser maps CSS pixels to physical display pixels.
+          </p>
+          <h2>More Display Tools</h2>
+          <p>
+            Use the resolution comparison suite to compare your display with common phones, tablets, laptops, monitors, and televisions. You can also inspect GPU and browser capabilities, run a dead pixel test, and export the results as JSON or text.
+          </p>
+        </section>
       </main>
 
       {/* Cyberpunk Footer */}

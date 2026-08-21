@@ -72,11 +72,11 @@ export const ResolutionHero: React.FC<ResolutionHeroProps> = ({ telemetry }) => 
           </div>
 
           <div className="flex flex-wrap items-baseline justify-center sm:justify-start gap-3">
-            <h1 className="text-4xl sm:text-6xl md:text-7xl font-black tracking-tight text-white glow-text-cyan font-mono">
+            <h2 className="text-4xl sm:text-6xl md:text-7xl font-black tracking-tight text-white glow-text-cyan font-mono">
               {telemetry.physicalWidth}{" "}
               <span className="text-[#00ff66] font-light">×</span>{" "}
               {telemetry.physicalHeight}
-            </h1>
+            </h2>
             <span className="text-lg sm:text-xl font-bold text-[#ffe600] font-mono">
               px
             </span>
